@@ -1,0 +1,129 @@
+.about {
+  background: white;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-content h2 {
+  margin-bottom: 20px;
+}
+
+.about-text {
+  color: #4b5563;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.skills-section {
+  margin-top: 40px;
+}
+
+.skills-section h3 {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.skill-category {
+  margin-bottom: 30px;
+}
+
+.skill-category-title {
+  font-weight: 600;
+  color: #3b82f6;
+  margin-bottom: 12px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: linear-gradient(135deg, #f0f4f8 0%, #e2e8f0 100%);
+  color: #0f172a;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: 1px solid #cbd5e1;
+}
+
+.skill-tag:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+  color: white;
+  border-color: #3b82f6;
+  transform: translateY(-2px);
+}
+
+.about-achievements {
+  margin-top: 40px;
+}
+
+.about-achievements h3 {
+  font-size: 1.3rem;
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+.achievement-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8fafc;
+  transition: all 0.3s ease;
+}
+
+.achievement-item:hover {
+  background: #f0f4f8;
+  transform: translateX(5px);
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+  min-width: 30px;
+  color: #3b82f6;
+}
+
+.achievement-text {
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 50px 20px !important;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .skill-tags {
+    gap: 8px;
+  }
+
+  .skill-tag {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
